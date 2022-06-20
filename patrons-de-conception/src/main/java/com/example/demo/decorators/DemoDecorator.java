@@ -6,7 +6,7 @@ public class DemoDecorator {
 
 		String salaryRecords = "Name,Salary\nJohn Smith,100000\nSteven Jobs,912000";
 		DataSourceDecorator encoded = new CompressionDecorator(
-									  		new EncryptationDecorator(
+									  		new EncryptionDecorator(
 									  				new FileDataSource("C:\\ws-sts\\patrons-de-conception\\src\\main\\java\\com\\example\\demo\\decorators\\out\\OutputDemo.txt")));
 		
 		encoded.writeData(salaryRecords);

@@ -43,6 +43,7 @@ public class CompressionDecorator extends DataSourceDecorator {
 			ByteArrayOutputStream bout = new ByteArrayOutputStream(512);
 			DeflaterOutputStream dos = new DeflaterOutputStream(bout, new Deflater(compLevel));
 			dos.write(data);
+			dos.close();
 			bout.close();
 			return Base64.getEncoder().encodeToString(bout.toByteArray());
 		} catch (IOException e) {
