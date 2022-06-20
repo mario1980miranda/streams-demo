@@ -45,15 +45,18 @@ public class Demo {
 			if(strategy == null) {
 				System.out.println("Please, select a payment method: " +  "\n"
 						+ "1 - PayPal" + "\n" 
-						+ "2 - Credit Card");
+						+ "2 - Credit Card" + "\n"
+						+ "3 - Debit Card");
 				String paymentMethod = reader.readLine();
 				
 				// Client creates different strategies based on input from user,
 				// application configuratio, etc...
 				if (paymentMethod.equals("1")) {
 					strategy = new PayByPayPal();
-				} else {
+				} else if (paymentMethod.equals("2")) {
 					strategy = new PayByCreditCard();
+				} else {
+					strategy = new PayByDebitCard();
 				}
 			}
 			

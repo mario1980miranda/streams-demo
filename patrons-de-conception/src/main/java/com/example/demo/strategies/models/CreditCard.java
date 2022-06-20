@@ -1,4 +1,4 @@
-package com.example.demo.strategies;
+package com.example.demo.strategies.models;
 
 /**
  * Dummy credit card class.
