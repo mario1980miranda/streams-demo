@@ -1,4 +1,6 @@
-package com.example.demo.factory_method.buttons;
+package com.example.demo.factory_method.dialogs;
+
+import com.example.demo.factory_method.buttons.Button;
 
 /**
  * Base factory class. Note that "factory" is merely a role for the class.

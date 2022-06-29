@@ -1,11 +1,15 @@
-package com.example.demo.factory_method.buttons;
+package com.example.demo.factory_method;
+
+import com.example.demo.factory_method.dialogs.Dialog;
+import com.example.demo.factory_method.dialogs.HtmlDialog;
+import com.example.demo.factory_method.dialogs.WindowsDialog;
 
 /**
  * Everything comes together here.
  * @author Mario
  *
  */
-public class Demo {
+public class DemoFactoryMethod {
 
 	private static Dialog dialog;
 	
